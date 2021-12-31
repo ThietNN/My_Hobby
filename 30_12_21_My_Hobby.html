@@ -5,16 +5,35 @@
     <title>My_Hobby</title>
 </head>
 <body>
-<form>
-<h2><span style="color:white;background-color:orangered":>SỞ THÍCH CỦA BẠN</span></h2>
+<style>
+    .form {
+        width: 30%;
+        background-color: lightblue;
+    }
+
+    .input__display {
+        padding: 18px 65px;
+    }
+
+    .input_type {
+        width:100px
+    }
+    .title{
+        color: white;
+        background-color: orangered;
+        padding: 18px 65px
+    }
+   </style>
+<form  class="form">
+<h2 class="title">SỞ THÍCH CỦA BẠN</h2>
     <table>
     <h3><tr><td><span style="color:blue">Họ và tên:</span></td>
             <td><input type="text" name="name"/></td></h3></tr>
     <h3><tr><td><span style="color:blue">Email:</span></td>
-        <td><input type="text" name="email"/></td></h3></tr>
+        <td><input class = "input_type" type="text" name="email"/></td></h3></tr>
     </table>
 <table>
-    <h3><tr><td rowspan="3"><span style="color:blue">Sở thích:</span></td>
+    <h3><tr><td class="hobby" rowspan="3"><span style="color:blue">Sở thích:</span></td>
             <td><input type="checkbox" name="hobby"><span style="color:orangered">Thể thao</span></td>
             <td><input type="checkbox" name="hobby"><span style="color:orangered">Âm nhạc</span></td>
             <td><input type="checkbox" name="hobby"><span style="color:orangered">Đọc sách</span></td></tr>
@@ -23,8 +42,11 @@
             <td><input type="checkbox" name="hobby"><span style="color:orangered">Điện ảnh</span></td></tr>
         <tr><td><input type="checkbox" name="hobby"><span style="color:orangered">Du lịch</span></td></tr></h3>
 </table>
-    <input type="button" name="submit" value="Gửi thông tin">
-    <input type="reset" name="reset" value="Nhập lại">
+    <div class="input__display">
+        <input type="button" name="submit" value="Gửi thông tin">
+        <input type="reset" name="reset" value="Nhập lại">
+    </div>
+
 </form>
 </body>
 </html>
